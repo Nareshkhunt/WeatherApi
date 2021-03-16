@@ -1,0 +1,1448 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Validate weather data with valid data",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 364984718,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2244968781,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I execute get request with query param \"q\" and \"london\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q",
+                  "offset": 40
+                },
+                {
+                  "val": "london",
+                  "offset": 48
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105550401,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 848914778,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see response with values of \"London\",\"2643743\",\"-0.1257\",\"51.5085\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 31
+                },
+                {
+                  "val": "2643743",
+                  "offset": 40
+                },
+                {
+                  "val": "-0.1257",
+                  "offset": 50
+                },
+                {
+                  "val": "51.5085",
+                  "offset": 60
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_see_response_with_values_of(String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Validate weather data with valid data",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-valid-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 977220,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 186287431,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I execute get request with query param \"id\" and \"2643743\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "2643743",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5552680,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84634027,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see response with values of \"London\",\"2643743\",\"-0.1257\",\"51.5085\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 31
+                },
+                {
+                  "val": "2643743",
+                  "offset": 40
+                },
+                {
+                  "val": "-0.1257",
+                  "offset": 50
+                },
+                {
+                  "val": "51.5085",
+                  "offset": 60
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_see_response_with_values_of(String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Validate weather data with valid data",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-valid-data;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 445793,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197191879,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I execute get request with query param \"zip\" and \"94040\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zip",
+                  "offset": 40
+                },
+                {
+                  "val": "94040",
+                  "offset": 50
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2996264,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111883084,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see response with values of \"Mountain View\",\"0\",\"-122.088\",\"37.3855\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mountain View",
+                  "offset": 31
+                },
+                {
+                  "val": "0",
+                  "offset": 47
+                },
+                {
+                  "val": "-122.088",
+                  "offset": 51
+                },
+                {
+                  "val": "37.3855",
+                  "offset": 62
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_see_response_with_values_of(String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Validate weather data with valid data",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 376397,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 244599029,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I execute get request by geographic coordinates with query params \"51.51\" \"-0.13\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "51.51",
+                  "offset": 67
+                },
+                {
+                  "val": "-0.13",
+                  "offset": 75
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_by_geographic_coordinates_with_query_params(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1219761,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should see status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125819849,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I see response with values of \"London\",\"2643743\",\"-0.13\",\"51.51\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 31
+                },
+                {
+                  "val": "2643743",
+                  "offset": 40
+                },
+                {
+                  "val": "-0.13",
+                  "offset": 50
+                },
+                {
+                  "val": "51.51",
+                  "offset": 58
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_see_response_with_values_of(String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Validate weather data without query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-without-query-parameters-value;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 435586,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102948136,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I execute get request with query param \"q\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 48
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11309988,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112333527,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Validate weather data without query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-without-query-parameters-value;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16543936,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132740004,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I execute get request with query param \"id\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 340518,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25742022,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Validate weather data without query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-without-query-parameters-value;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 471177,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102859494,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I execute get request with query param \"zip\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zip",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 993022,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27715634,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Validate weather data with wrong query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-query-parameters-value;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1555265,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179408368,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I execute get request with query param \"q\" and \"london12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q",
+                  "offset": 40
+                },
+                {
+                  "val": "london12",
+                  "offset": 48
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 426738,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should see status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20421767,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I should see the message body with \"message\" as \"city not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "city not found",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Validate weather data with wrong query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-query-parameters-value;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6201279,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104678447,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I execute get request with query param \"id\" and \"264374398088\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 40
+                },
+                {
+                  "val": "264374398088",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 372574,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should see status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34934292,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I should see the message body with \"message\" as \"city not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "city not found",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Validate weather data with wrong query parameters value",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-query-parameters-value;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 730580,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106628590,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I execute get request with query param \"zip\" and \"9404078998909\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zip",
+                  "offset": 40
+                },
+                {
+                  "val": "9404078998909",
+                  "offset": 50
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 302069,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should see status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24734419,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I should see the message body with \"message\" as \"city not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "city not found",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "Validate weather data with wrong or without query parameters",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-or-without-query-parameters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10670650,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120336693,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I execute get request with query param \"q1\" and \"london\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q1",
+                  "offset": 40
+                },
+                {
+                  "val": "london",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 448000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19645657,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Validate weather data with wrong or without query parameters",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-or-without-query-parameters;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 280213,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 137223294,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I execute get request with query param \"\" and \"2643743\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 40
+                },
+                {
+                  "val": "2643743",
+                  "offset": 47
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1774856,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20374744,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Validate weather data with wrong or without query parameters",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-or-without-query-parameters;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1793385,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95196665,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I execute get request with query param \"zip1\" and \"94040\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "zip1",
+                  "offset": 40
+                },
+                {
+                  "val": "94040",
+                  "offset": 51
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_query_param_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 405692,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should see status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28008849,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I should see the message body with \"message\" as \"Nothing to geocode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Nothing to geocode",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getService"
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "Validate weather data with wrong Api key",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-with-wrong-api-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2223910,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128619058,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I execute get request with wrong api key and query param as \"q\" and \"london\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q",
+                  "offset": 61
+                },
+                {
+                  "val": "london",
+                  "offset": 69
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_with_wrong_api_key_and_query_param_as_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 388848,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I should see status code as \"401\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13363545,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I should see the message body with \"message\" as \"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 68,
+        "name": "Validate weather data without Api key",
+        "description": "",
+        "id": "api-get-request-testing-for-openweathermap;validate-weather-data-without-api-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 362523,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I have base uri",
+            "match": {
+              "location": "GetCurrentWeatherDataSteps.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72874853,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I execute get request without api key and query param as \"q\" and \"london\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "q",
+                  "offset": 58
+                },
+                {
+                  "val": "london",
+                  "offset": 66
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_execute_get_request_without_api_key_and_query_param_as_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2049514,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I should see status code as \"401\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 29
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22005745,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I should see the message body with \"message\" as \"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "message",
+                  "offset": 36
+                },
+                {
+                  "val": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.",
+                  "offset": 49
+                }
+              ],
+              "location": "GetCurrentWeatherDataSteps.i_should_see_the_message_body_with_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "API get request Testing for OpenWeatherMap",
+    "description": "As a user\nI want to to be able get current weather data for one location\nSo that I can validate that API functionality",
+    "id": "api-get-request-testing-for-openweathermap",
+    "keyword": "Feature",
+    "uri": "getWeatherData.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@getService"
+      }
+    ]
+  }
+]
